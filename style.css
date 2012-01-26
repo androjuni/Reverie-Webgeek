@@ -1,0 +1,392 @@
+/*
+ Theme Name:         Webgeeks
+ Theme URI:          http://weebgeek.ph
+ Description:        A modified version of Reverie http://themefortress.com/reverie
+ Version:            1.0.0
+ Author:
+ Author URI:
+
+ */
+
+/* --------------------------------------------------
+ Table of Contents
+ -----------------------------------------------------
+ :: Customized Adjustments of Foundation for WordPress
+ :: Styling Basic WordPress Outputs
+ :: Customize Foundation Style Pagination for WP-Pagenavi
+ :: Your Customized Style
+ */
+
+/* ---------------------------------------------------
+ Customized Adjustments of Foundation for WordPress
+ --------------------------------------------------- */
+
+/* Auto Height for Images for Responsive Design */
+img {
+	height: auto;
+}
+li {
+	margin-bottom: 2% !important;
+}
+/* ZURB Navi for Foundation */
+dl.nav {
+	display: block;
+	width: auto;
+	height: 27px;
+	margin: 0 0 18px;
+}
+dl.nav dt, dl.nav dd {
+	float: left;
+	display: inline;
+}
+dl.nav dt {
+	color: #999;
+	font-weight: normal;
+}
+dl.nav dd a {
+	text-decoration: none;
+	margin-left: 6px;
+	padding: 5px 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+}
+dl.nav dd a:hover {
+	background: #eee;
+}
+dl.nav dd.current-menu-item a, dl.nav dd.current-post-ancestor a, dl.nav dd.current-menu-parent a, dl.nav dd.current-post-parent a {
+	background: #2A85E8;
+	color: #fff;
+}
+/* Foundation-specific presentation CSS by ZURB */
+body {
+	padding-bottom: 60px;
+}
+div.reverie-header {
+	margin: 0 0 30px 0;
+	padding: 20px 0 0 0;
+	border-bottom: solid 1px #ccc;
+}
+div.reverie-header h1 {
+	margin-bottom: 0;
+	padding: 0;
+}
+div.reverie-header h1 a {
+	color: #181818;
+}
+div.reverie-header h1 a:hover {
+	color: #181818;
+}
+div.reverie-header .subheader {
+	margin-bottom: 9px;
+}
+div.highlight {
+	margin-bottom: 12px;
+}
+img.beta {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+/* -----------------------------------------
+ Styling Basic WordPress Outputs
+ ----------------------------------------- */
+
+/* Resizing the Blog Post */
+.post-box p {
+	line-height: 21px !important;
+}
+.post-box {
+	font-size: 14px;
+	line-height: 20px !important;
+}
+.post-box h1 {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 2px;
+}
+.post-box h2 {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1;
+	margin-bottom: 2px;
+}
+.post-box h3 {
+	font-size: 22px;
+}
+.post-box h4 {
+	font-size: 18px;
+}
+/* Add Divider for Listed Posts */
+.divider {
+	background: url(images/divider.png) no-repeat center top;
+	height: 36px;
+	margin: 20px 0 27px;
+}
+/* Add Align Class for Images */
+img.alignright {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+img.alignleft {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+/* Add HTML5 Caption Class for Images */
+figure.figure {
+	background: #EEE;
+	margin: 0 0 18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	display: inline-block;
+}
+figure.figure figcaption {
+	display: block;
+	padding: 8px 10px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #555;
+}
+figure.alignright.figure {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+figure.alignleft.figure {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+/* Sidebar Adjustment */
+.sidebar-section {
+	padding-bottom: 10px;
+	padding-top: 20px;
+	font-size: 1.3 rem;
+	font-weight: normal;
+}
+/* Footer Nav */
+.footer-section {
+	padding-bottom: 10px;
+	padding-top: 20px;
+	font-size: 1.3 rem;
+	font-weight: normal;
+}
+.footer-nav li {
+	display: block;
+	float: right;
+	padding-left: 3%;
+	margin-bottom: 0;
+}
+/*  -------------------------------------------------------
+ Customize Foundation Style Pagination for WP-Pagenavi
+ ---------------------------------------------------- */
+
+div.wp-pagenavi {
+	display: block;
+	height: 24px;
+	margin-left: -5px;
+	color: #555;
+}
+div.wp-pagenavi a, div.wp-pagenavi span {
+	float: left;
+	display: block;
+	padding: 6px 7px 4px;
+	height: 24px;
+	color: #555;
+	font-size: 15px;
+	margin-left: 5px;
+}
+div.wp-pagenavi span.pages {
+	padding-left: 0;
+}
+div.wp-pagenavi .current, div.wp-pagenavi a:hover {
+	border-bottom: solid 2px #00a6fc;
+	color: #141414;
+}
+div.wp-pagenavi span.unavailable:hover {
+	border-bottom: none;
+}
+/*  --------------------------
+ Your Customized Style
+ ----------------------- */
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('PT Sans'), local('PTSans-Regular'), url('http://themes.googleusercontent.com/static/fonts/ptsans/v3/LKf8nhXsWg5ybwEGXk8UBQ.woff') format('woff');
+}
+#header {
+	min-height: 80px;
+	/*height:auto !important;
+	 height:80px; ie fix*/
+	background: #415b79; /* Old browsers */
+	background: -moz-linear-gradient(top,  #415b79 0%, #2a3b5b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#415b79), color-stop(100%,#2a3b5b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* IE10+ */
+	background: linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* W3C */
+	filter: progid :DXImageTransform.Microsoft.gradient( startColorstr='#415b79', endColorstr='#2a3b5b',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3)
+}
+#logo {
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	top: 22px;
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: 0px -1047px;
+}
+#content-index {
+	background: #effbff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #effbff 34%, #cae6f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#effbff), color-stop(100%,#cae6f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* IE10+ */
+	background: linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* W3C */
+	filter: progid :DXImageTransform.Microsoft.gradient( startColorstr='#effbff', endColorstr='#cae6f1',GradientType=0 ); /* IE6-9 */
+}
+#footer-wrap {
+	background: #e4e4e4;
+	background-image: url(images/footerbg.png);
+	background-repeat: repeat-x;
+}
+footer.links.row {
+	font-family: 'PT Sans', sans-serif;
+	min-height: 234px;
+}
+footer.links.row a{
+	margin-left: 20px;
+	color: #505050;
+	text-shadow: 1px 1px 1px white;
+	font-size: 15px;
+	line-height: 23px;
+}
+footer .linkcat {
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: 0px -1169px;
+	width: 199px;
+	height: 38px;
+	margin-top: 25px;
+	padding: 6px 21px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #353535;
+}
+#group-tagline {
+	min-height: 200px;
+	text-align: center;
+}
+.tagline1 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 4.6em;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #404040;
+	text-shadow: 4px 4px 4px white;
+	margin: 0;
+}
+.tagline2 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.886em;
+	line-height: 1.5em;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-shadow: 4px 4px 4px white;
+}
+.tagline3 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-style: italic;
+	margin: 5px 0 0 0;
+	text-shadow: 4px 4px 4px white;
+}
+.tagline4 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-style: italic;
+	margin: 0;
+	text-shadow: 4px 4px 4px white;
+}
+.joinrow.row {
+	height: 200px;
+	background: url(images/groupjoinnowbg.png) no-repeat;
+}
+#join-now {
+	display: block;
+	height: 93px;
+	width: 319px;
+	margin: 0 auto;
+	margin-top: 70px;
+	overflow: hidden;
+	background: url(images/buttonsprites.png) no-repeat;
+}
+.wgmobilecol.column {
+}
+#wgmobile {
+	width: 296px;
+	display: block;
+	height: 285px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	overflow: hidden;
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: 0px -472px;
+}
+.wgfacebookcol.column {
+	margin-left: 0;
+}
+#wgfacebookscreen {
+	width: 455px;
+	display: block;
+	height: 285px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	overflow: hidden;
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: 0px -761px;
+}
+.wgapps.column {
+	margin-left: 0;
+	margin-bottom: 50px;
+}
+#wgiphone, #wgandroid, #wgfacebook, #wgchrome {
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(images/buttonsprites.png) no-repeat;
+	width: 193px;
+	height: 64px;
+	margin-bottom: 10px;
+}
+#wgiphone {
+	background-position: 0px -185px;
+}
+#wgandroid {
+	background-position: 0px -259px;
+}
+#wgfacebook {
+	background-position: 0px -332px;
+}
+#wgchrome {
+	background-position: 0px -406px;
+}
+@media handheld, only screen and (max-width: 767px) {
+	.tagline1 {
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+	.tagline2 {
+		font-size: 1em;
+	}
+	.tagline3 {
+		font-size: 0.9em;
+	}
+	.tagline4 {
+		font-size: 0.9em;
+	}
+}
