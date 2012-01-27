@@ -1,4 +1,4 @@
-</div><!-- Container End -->
+<!-- Container End -->
 <div id="footer-wrap" class="container">
 	<!-- 		this can be dynamic, via WP sidebar or nav menu -->
 	<!-- 		i don't like using lists, btw -->

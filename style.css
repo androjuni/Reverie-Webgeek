@@ -375,6 +375,9 @@ footer .linkcat {
 #wgchrome {
 	background-position: 0px -406px;
 }
+#content-wrap{
+	margin: 35px 0px;
+}
 @media handheld, only screen and (max-width: 767px) {
 	.tagline1 {
 		font-size: 1.5em;

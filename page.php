@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<div id="content-wrap" class="container">
 	<!-- Row for main content area -->
 	<div id="content" class="row">
 	
@@ -16,5 +17,5 @@
 		</aside><!-- /#sidebar -->
 
 	</div><!-- End content row -->
-	
+</div>	
 <?php get_footer(); ?>

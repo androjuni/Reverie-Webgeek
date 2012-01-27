@@ -30,4 +30,5 @@
 			<a id="wgchrome"href=""></a>
 		</div>
 	</div>
+</div>
 <?php get_footer();?>
