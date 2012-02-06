@@ -45,8 +45,8 @@
 		For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
 		<script src="<?php echo get_template_directory_uri();?>/js/libs/modernizr-2.0.6.min.js"></script>
 		<?php
-			if (is_singular())
-				wp_enqueue_script('comment-reply');
+		if (is_singular())
+			wp_enqueue_script('comment-reply');
 		?>
 		<?php wp_head();?>
 	</head>
@@ -55,9 +55,8 @@
 		<div id="header" class="container">
 			<div class="row">
 				<header class="twelve columns" role="banner">
-					<a id="logo" href="">
-<!-- 						<img src="<?php echo get_template_directory_uri();?>/images/buttonsprites.png" alt="Webgeek Logo"/> -->
-					</a>
+					<a id="logo" href="<?php echo home_url(); ?>"> <!-- 						<img src="<?php echo get_template_directory_uri();?>/images/buttonsprites.png" alt="Webgeek Logo"/> --> </a>
 				</header>
+				<?php wp_nav_menu(array('menu' => 'Main Navigation', 'container' => 'div', 'container_id' => 'top-nav-wrap', 'menu_class' => 'top-nav', 'current-menu-item' => 'top-nav-active'));?>
 			</div>
 		</div>

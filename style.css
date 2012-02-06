@@ -232,6 +232,7 @@ div.wp-pagenavi span.unavailable:hover {
 #logo {
 	display: block;
 	height: 40px;
+	width: 228px;
 	overflow: hidden;
 	position: relative;
 	top: 22px;
@@ -378,6 +379,28 @@ footer .linkcat {
 #content-wrap{
 	margin: 35px 0px;
 }
+
+/*  --------------------------
+ Navigation
+ ----------------------- */
+ul.top-nav{
+	float:right;
+}
+ul.top-nav li{
+	display:inline;
+	margin-left: 18px;
+}
+ul.top-nav li a{
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	text-shadow: 1px 1px 0px black;
+}
+ul.top-nav li.current-menu-item {
+	background: lightblue;
+}
+
 @media handheld, only screen and (max-width: 767px) {
 	.tagline1 {
 		font-size: 1.5em;
