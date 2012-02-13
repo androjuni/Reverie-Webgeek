@@ -258,11 +258,15 @@ footer.links.row a {
 	font-size: 15px;
 	line-height: 23px;
 }
+footer.links.row a:hover {
+	color: #4F6583;
+	text-shadow: none;
+}
 footer .linkcat {
 	background: url(images/buttonsprites.png) no-repeat;
 	background-position: 0px -1169px;
 	width: 165px;
-	height: 38px;
+	height: 30px;
 	margin-top: 25px;
 	padding: 8px 21px;
 	font-size: 18px;

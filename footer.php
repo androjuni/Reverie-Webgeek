@@ -74,8 +74,7 @@ window.jQuery || document.write('<script src="<?php echo get_template_directory_
 		var offHeight = $(window).height() / 2;
 		var offX = e.pageX - offWidth;
 		var offY = e.pageY - offHeight;
-		$('.joinrow.row').css('background-position-x', offX/40*-1);
-		$('.joinrow.row').css('background-position-y', offY/100*-1);
+		$('.joinrow.row').css('background-position', (offX/30*-1) + 'px ' + (offY/40*-1) +'px');
 	});
 
 </script>
