@@ -59,7 +59,7 @@ dl.nav dd.current-menu-item a, dl.nav dd.current-post-ancestor a, dl.nav dd.curr
 }
 /* Foundation-specific presentation CSS by ZURB */
 body {
-	padding-bottom: 60px;
+	/*	padding-bottom: 60px;*/
 }
 div.reverie-header {
 	margin: 0 0 30px 0;
@@ -234,8 +234,8 @@ div.wp-pagenavi span.unavailable:hover {
 	height: 40px;
 	width: 228px;
 	overflow: hidden;
-	position: relative;
-	top: 22px;
+	margin-top: 19px;
+	margin-bottom: 14px;
 	background: url(images/buttonsprites.png) no-repeat;
 	background-position: 0px -1047px;
 }
@@ -258,7 +258,7 @@ footer.links.row {
 	font-family: 'PT Sans', sans-serif;
 	min-height: 234px;
 }
-footer.links.row a{
+footer.links.row a {
 	margin-left: 20px;
 	color: #505050;
 	text-shadow: 1px 1px 1px white;
@@ -268,16 +268,48 @@ footer.links.row a{
 footer .linkcat {
 	background: url(images/buttonsprites.png) no-repeat;
 	background-position: 0px -1169px;
-	width: 199px;
+	width: 165px;
 	height: 38px;
 	margin-top: 25px;
-	padding: 6px 21px;
+	padding: 8px 21px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #353535;
 }
+footer.links.row a.social {
+	margin-left: 6px;
+	float: left;
+	display: block;
+	width: 34px;
+	height: 34px;
+	background: url(images/buttonsprites.png) no-repeat;
+}
+footer.links.row a.social.fb {
+	background-position: -210px -1131px;
+}
+footer.links.row a.social.tw {
+	background-position: -251px -1131px;
+}
+footer.links.row a.social.gp {
+	background-position: -293px -1131px;
+}
+footer.links.row a.social.rss {
+	background-position: -335px -1131px;
+}
+footer.links.row a.social.fb:hover {
+	background-position: -210px -1168px;
+}
+footer.links.row a.social.tw:hover {
+	background-position: -251px -1168px;
+}
+footer.links.row a.social.gp:hover {
+	background-position: -293px -1168px;
+}
+footer.links.row a.social.rss:hover {
+	background-position: -335px -1168px;
+}
 #group-tagline {
-	min-height: 200px;
+	min-height: 180px;
 	text-align: center;
 }
 .tagline1 {
@@ -322,9 +354,12 @@ footer .linkcat {
 	height: 93px;
 	width: 319px;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 40px;
 	overflow: hidden;
 	background: url(images/buttonsprites.png) no-repeat;
+}
+#join-now:hover {
+	background-position: 0px -94px;
 }
 .wgmobilecol.column {
 }
@@ -367,43 +402,161 @@ footer .linkcat {
 #wgiphone {
 	background-position: 0px -185px;
 }
+#wgiphone:active, #wgiphone:hover {
+	background-position: -193px -185px;
+}
 #wgandroid {
 	background-position: 0px -259px;
+}
+#wgandroid:active, #wgandroid:hover {
+	background-position: -193px -259px;
 }
 #wgfacebook {
 	background-position: 0px -332px;
 }
+#wgfacebook:active, #wgfacebook:hover {
+	background-position: -193px -332px;
+}
 #wgchrome {
 	background-position: 0px -406px;
 }
-#content-wrap{
+#wgchrome:active, #wgchrome:hover {
+	background-position: -193px -406px;
+}
+#content-wrap {
 	margin: 35px 0px;
 }
-
 /*  --------------------------
  Navigation
  ----------------------- */
-ul.top-nav{
-	float:right;
+
+ul.top-nav a.join-nav, ul.top-nav a.login-nav {
+	display: block;
+	overflow: hidden;
+	background: url(images/buttonsprites.png) no-repeat;
+	width: 70px;
+	height: 17px;
+	margin-top: -5px;
+	margin-left: 10px;
 }
-ul.top-nav li{
-	display:inline;
-	margin-left: 18px;
+ul.top-nav a.join-nav {
+	background-position: -6px -1093px;
 }
-ul.top-nav li a{
+ul.top-nav a.login-nav {
+	background-position: -113px -1093px;
+}
+ul.top-nav a.join-nav:active, ul.top-nav a.join-nav:hover, ul.top-nav a.login-nav:active, ul.top-nav a.login-nav:hover {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+ul.top-nav li:hover a.join-nav {
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: -6px -1132px;
+}
+ul.top-nav li:hover a.login-nav {
+	background: url(images/buttonsprites.png) no-repeat;
+	background-position: -113px -1132px;
+}
+ul.top-nav {
+	float: left;
+	margin-top: 24px;
+}
+ul.top-nav li {
+	float: left;
+	position: relative;
+}
+ul.top-nav li a {
+	padding: 8px 10px;
 	text-transform: uppercase;
 	color: white;
 	font-weight: bold;
 	font-size: 14px;
 	text-shadow: 1px 1px 0px black;
 }
-ul.top-nav li.current-menu-item {
-	background: lightblue;
+ul.top-nav li:hover > a {
+	background: #2a3b5b;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: inset -1px -2px #395372, inset 1px 2px 2px #23314d;
+	-webkit-box-shadow: inset -1px -2px #395372, inset 1px 2px 2px #23314d;
+	box-shadow: inset -1px -2px #395372, inset 1px 2px 2px #23314d;
 }
-
-@media handheld, only screen and (max-width: 767px) {
+/* --submenu-- */
+ul.top-nav li ul {
+	background: #EDF9FE;
+	-webkit-box-shadow: 0 1px 3px #395372;
+	border-bottom: 1px solid #395372;
+	padding: 10px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+ul.top-nav li ul a {
+	padding-top: 1px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	display: block;
+	color: #283857;
+	font-size: 12px;
+	text-shadow: none;
+	font-weight: normal;
+	text-transform: none;
+}
+ul.top-nav li ul li:hover a {
+	background: white;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+ul.top-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	position: absolute;
+	z-index: 500;
+}
+ul.top-nav li ul {
+	top: 20px;
+	-moz-box-shadow: 0 2px 10px #000;
+}
+ul.top-nav ul ul {
+	top: 0;
+	left: 100%;
+}
+ul.top-nav ul li {
+	float: none;
+}
+ul.top-nav ul, ul.top-nav li:hover ul ul, ul.top-nav ul li:hover ul ul {
+	display: none;
+}
+/* Display the submenus only when li are hovered */
+/*ul.top-nav li:hover ul, ul.top-nav ul li:hover ul, ul.top-nav ul li ul li:hover ul {
+ display: block;
+ }*/
+ul.top-nav li.current-menu-item {
+	/*	background: lightblue;*/
+}
+/* Content styles */
+h1, h2, h3, h4, h5, h6 {
+	color: #283857;
+}
+@media only screen and (max-width: 320px) {
+	ul.top-nav {
+		float: left;
+		margin-top: 0px;
+	}
 	.tagline1 {
-		font-size: 1.5em;
+		font-size: 3em;
 		line-height: 1.2em;
 	}
 	.tagline2 {
@@ -414,5 +567,119 @@ ul.top-nav li.current-menu-item {
 	}
 	.tagline4 {
 		font-size: 0.9em;
+	}
+	.joinrow.row {
+		height: 100px;
+		background: none;
+	}
+	#join-now {
+		height: 76px;
+		width: 270px;
+		margin-top: 20px;
+		background-size: 158%;
+	}
+	#join-now:active, #join-now:hover {
+		background-position-y: -80px;
+	}
+	#wgmobile {
+		width: 265px;
+		background-size: 166%;
+		background-position-y: -415px;
+		height: 250px;
+		margin-bottom: 20px;
+	}
+	#wgfacebookscreen {
+		background-size: 64%;
+		background-position-y: -440px;
+		height: 168px;
+		margin-bottom: 20px;
+	}
+	.linkcat {
+		margin: 0px auto;
+	}
+	footer.links.row a {
+		margin-left: 30px;
+	}
+	footer.links.row a.social.fb {
+		margin-left: 30px;
+	}
+}
+@media only screen and (max-width: 460px) {
+	ul.top-nav {
+		float: left;
+		margin-top: 0px;
+	}
+	.tagline1 {
+		font-size: 4em;
+		line-height: 1.2em;
+	}
+	.tagline2 {
+		font-size: 1em;
+	}
+	.tagline3 {
+		font-size: 1em;
+	}
+	.tagline4 {
+		font-size: 1em;
+	}
+	.joinrow.row {
+		height: 130px;
+		background: none;
+	}
+	#join-now {
+		margin-top: 20px;
+	}
+	#wgmobile {
+		width: 265px;
+		background-size: 166%;
+		background-position-y: -415px;
+		height: 250px;
+		margin-bottom: 20px;
+	}
+	#wgfacebookscreen {
+		background-size: 98%;
+		background-position-y: -674px;
+		height: 256px;
+		margin-bottom: 20px;
+	}
+	.linkcat {
+		margin: 0px auto;
+	}
+	footer.links.row a {
+		margin-left: 117px;
+	}
+	footer.links.row a.social.fb {
+		margin-left: 117px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	ul.top-nav {
+		float: left;
+		margin-top: 0px;
+	}
+	.tagline1 {
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+	.tagline2 {
+		font-size: 1.5em;
+	}
+	.tagline3 {
+		font-size: 1em;
+	}
+	.tagline4 {
+		font-size: 1em;
+	}
+	.joinrow.row {
+		background: none;
+	}
+	.linkcat {
+		margin: 0px auto;
+	}
+	footer.links.row a {
+		margin-left: 264px;
+	}
+	footer.links.row a.social.fb {
+		margin-left: 264px;
 	}
 }

@@ -13,10 +13,10 @@
 			?></title>
 		<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 		<!-- Included Foundation CSS Files -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/foundation.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/app.css">
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css">
 		<![endif]-->
@@ -53,10 +53,16 @@
 	<body <?php body_class();?>>
 		<!-- Header -->
 		<div id="header" class="container">
-			<div class="row">
-				<header class="twelve columns" role="banner">
-					<a id="logo" href="<?php echo home_url(); ?>"> <!-- 						<img src="<?php echo get_template_directory_uri();?>/images/buttonsprites.png" alt="Webgeek Logo"/> --> </a>
-				</header>
-				<?php wp_nav_menu(array('menu' => 'Main Navigation', 'container' => 'div', 'container_id' => 'top-nav-wrap', 'menu_class' => 'top-nav', 'current-menu-item' => 'top-nav-active'));?>
-			</div>
+			<header class="row">
+				<div class="three columns" role="banner">
+					<a id="logo" href="<?php echo home_url();?>"> <!-- 						<img src="<?php echo get_template_directory_uri();?>/images/buttonsprites.png" alt="Webgeek Logo"/> --> </a>
+				</div>
+				<div class="nine columns">
+					<?php wp_nav_menu(array('theme_location' => 'top', 'menu' => 'Main Navigation', 'container' => 'div', 'container_id' => 'top-nav-wrap', 'menu_class' => 'top-nav', 'current-menu-item' => 'top-nav-active'));?>
+					<ul class="top-nav">
+						<li><a class="join-nav" href="http://nba.com"></a></li>
+						<li><a class="join-nav" href="http://nba.com"></a></li>
+					</ul>
+				</div>
+			</header>
 		</div>

@@ -7,7 +7,7 @@
 		<br/>
 		<span class="tagline2">Community that acts as a venue for Filipino Geeks, Developers and Designers.</span>
 		<br/>
-		<span class="tagline3">Connect with fellow webgeeks, join our forum discussion, ask questions, share your tutorials,</span>
+		<span class="tagline3">Connect with fellow webgeeks, join our forum discussion, ask questions, and share your tutorials.</span>
 		<br/>
 		<span class="tagline4">Join our community events & meetups Available on Android, iOS Devices & Facebook App.</span>
 	</div>
@@ -16,11 +16,11 @@
 	</div>
 	<div class="row">
 		<div class="wgmobilecol column">
-			<a id="wgmobile"href=""></a>
+			<div id="wgmobile"></div>
 		</div>
 		<!-- medyo wierd lang "Available on Facebook App" -->
 		<div class="wgfacebookcol column">
-			<a id="wgfacebookscreen"href=""></a>
+			<div id="wgfacebookscreen"></div>
 		</div>
 		<!-- also in sidebar , parang redundant na pala to sa homepage... -->
 		<div class="wgapps column">
