@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'PT Sans', sans-serif;
 	line-height: 1.5;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 461px) and (max-width: 768px) {
 	ul.top-nav {
 		float: left;
 		margin-top: 0px;
@@ -580,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: 264px;
 	}
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (min-width: 321px) and (max-width: 460px) {
 	ul.top-nav {
 		float: left;
 		margin-top: 0px;
